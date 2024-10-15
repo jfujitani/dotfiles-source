@@ -1,20 +1,18 @@
 format = """
 $hostname\
 $os\
-[░▒▓](#a3aed2)\
-[▓](bg:#769ff0 fg:#a3aed2)\
+[░▒▓]()\
+[▓]()\
 $directory\
-[](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#212736 bg:#1d2230)\
+[ ]()\
 $time\
-[ ](fg:#1d2230)\
+[ ]()\
 \n$character"""
 
 [character]
@@ -69,7 +67,6 @@ Unknown = ""
 Windows = ""
 
 [directory]
-style = "fg:#ffffff bg:#424244"
 format = "[ $path ]($style)"
 truncation_length = 6
 truncation_symbol = "…/"
@@ -81,9 +78,8 @@ truncation_symbol = "…/"
 "Pictures" = " "
 
 [git_branch]
-symbol = ""
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+symbol = " "
+format = '[[ $symbol $branch ]()]($style)'
 
 [git_status]
 ahead = '⇡${count}'
@@ -93,30 +89,25 @@ behind = '⇣${count}'
 [hostname]
 ssh_only = true
 ssh_symbol = ' '
-format = '[[$ssh_symbol](bold fg:#ed0202)$hostname]($style) '
+format = '[[$ssh_symbol](bold)$hostname]($style) '
 
 [nodejs]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+symbol = " "
+format = '[[ $symbol ($version) ]()]($style)'
 
 [rust]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+symbol = " "
+format = '[[ $symbol ($version) ]()]($style)'
 
 [golang]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+symbol = " "
+format = '[[ $symbol ($version) ]()]($style)'
 
 [php]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+symbol = " "
+format = '[[ $symbol ($version) ]()]($style)'
 
 [time]
 disabled = false
 time_format = "%I:%M:%S %p" # Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[$time ](fg:#c0c9eb bg:#1d2230)]($style)'
+format = '[[$time ]()]($style)'
