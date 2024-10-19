@@ -34,6 +34,9 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vim.leader": "<Space>",
+  "vim.handleKeys": {
+    "<C-f>": false,
+  },
   "editor.lineNumbers": "relative",
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<S-h>"], "commands": [":bprevious"]},
