@@ -1,0 +1,14 @@
+let mapleader=" "
+
+set number relativenumber
+
+set scrolloff=10
+set incsearch
+
+map <C-H> <C-W>h
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <leader>e :NERDTree<CR>
+
+set NERDTree
