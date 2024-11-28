@@ -112,16 +112,12 @@ _fzf_comprun() {
     esac
 }
 
+# vim prompt
 set -o vi
+
 # When kitty is used to ssh into a remote that does not have its terminfo, various issues can occur.
 # The solution is normally to copy over the terminfo. Kitty has an ssh kitten to automate exactly this.
 # [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
-
-# alias db='distrobox'
-# alias ls='ls --color=auto'
-# alias la='ls -a'
-# alias ll='ls -lav --ignore=..' # show long listing of all except ".."
-# alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
 alias fcheckout='git branch | awk '\''{$1=$1; print}'\'' | fzf --height=80% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview '\''echo "Branch: {}"; echo "Latest Commit: $(git log --oneline -n 1 {})"'\'' | awk '\''{print $NF}'\'' | xargs git checkout'
 
 export PICO_SDK_PATH=/home/jfujitani/repos/pico/pico-sdk
@@ -137,3 +133,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.local/bin"
+
+if [ -f ~/.bashrc_alias ]; then
+    source ~/.bashrc_alias
+fi
