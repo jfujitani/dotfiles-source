@@ -36,6 +36,7 @@
   "vim.leader": "<Space>",
   "vim.handleKeys": {
     "<C-f>": false,
+    "<C-p>": false,
   },
   "editor.lineNumbers": "relative",
   "vim.normalModeKeyBindingsNonRecursive": [
