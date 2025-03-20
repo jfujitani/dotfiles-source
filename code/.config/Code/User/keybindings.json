@@ -30,10 +30,7 @@
     { "key": "ctrl-l", "command": "workbench.action.navigateRight" },
     { "key": "ctrl-h", "command": "workbench.action.navigateLeft" },
     { "key": "ctrl-j", "command": "workbench.action.navigateDown" },
-    {
-      "key": "ctrl-k",
-      "command": "workbench.action.navigateUp"
-    },
+    { "key": "ctrl-k", "command": "workbench.action.navigateUp" },
     {
       "key": "ctrl+w",
       "command": "-extension.vim_ctrl+w",
