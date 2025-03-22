@@ -1,7 +1,3 @@
-if true then
-  return {}
-end
-
 return {
   {
     "nvim-telescope/telescope.nvim",
@@ -13,19 +9,11 @@ return {
         end,
         desc = "Find Plugin File",
       },
-      {
-        "<leader>fg",
-        function()
-          require("telescope.builtin").live_grep({})
-        end,
-        desc = "Find In Files",
-      },
     },
     opts = {
       defaults = {
-        initial_mode = "normal",
+        initial_mode = "insert",
         layout_strategy = "horizontal",
-        -- layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
         winblend = 0,
       },
@@ -35,10 +23,6 @@ return {
           additional_args = function(_)
             return { "--hidden" }
           end,
-        },
-        find_files = {
-          file_ignore_patterns = { "bin", "obj", "node_modules", ".git", ".venv" },
-          hidden = true,
         },
       },
     },
