@@ -37,13 +37,14 @@
   "vim.handleKeys": {
     "<C-f>": false,
     "<C-p>": false,
+    "<C-i>": false
   },
   "editor.lineNumbers": "relative",
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["<S-h>"], "commands": [":bprevious"]},
     { "before": ["<S-l>"], "commands": [":bnext"]},
     { "before": ["leader", "|"], "commands": [":vsplit"] },
-    { "before": ["leader", "-"], "commands": [":split"] },
+    { "before": ["leader", "-"], "commands": [":split"] }
   ],
   "editor.minimap.enabled": false
 }
