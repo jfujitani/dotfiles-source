@@ -12,6 +12,5 @@ echo ":: Running hook for ML4W Dotfiles $version"
 # you can protect the files and folders from being overwritten by updates.
 
 _protect .config/starship.toml
-_protect .bashrc_custom
 # You can add more command to get executed before the prepared Dotfiles
 # will be copied to the target folder ~/dotfiles
