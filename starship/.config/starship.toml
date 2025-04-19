@@ -10,15 +10,16 @@ $nodejs\
 $rust\
 $golang\
 $php\
-[ ]()\
+[ ]()\
 $time\
-[ ]()\
+[ ]()\
 \n$character"""
 
 [character]
 success_symbol = '[➜](bold green)'
 error_symbol = '[✖](bold red)'
 # error_symbol = '[\(╯°-°\)╯︵┻━┻](bold red)'
+
 [os]
 format = "[$symbol]($style) "
 disabled = false
@@ -108,5 +109,5 @@ format = '[[ $symbol ($version) ]()]($style)'
 
 [time]
 disabled = false
-time_format = "%I:%M:%S %p"     # Hour:Minute Format
-format = '[[$time ]()]($style)'
+time_format = "%I:%M:%S %p"    # Hour:Minute Format
+format = '[[$time]()]($style)'
