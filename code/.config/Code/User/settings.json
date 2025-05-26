@@ -46,5 +46,6 @@
     { "before": ["leader", "|"], "commands": [":vsplit"] },
     { "before": ["leader", "-"], "commands": [":split"] }
   ],
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "debug.javascript.autoAttachFilter": "disabled"
 }
