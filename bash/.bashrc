@@ -138,3 +138,12 @@ export PATH="$PATH:$HOME/go/bin"
 if [ -f ~/.bashrc_alias ]; then
     source ~/.bashrc_alias
 fi
+
+# Source Gemini API key if it exists
+if [ -f ~/.config/gemini/api_key ]; then
+  source ~/.config/gemini/api_key
+fi
+
+if [ -f /usr/bin/zoxide ]; then
+  eval "$(zoxide init bash)"
+fi
