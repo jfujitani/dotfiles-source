@@ -143,5 +143,4 @@ if [ -f /usr/bin/zoxide ]; then
 fi
 
 # Kitty Shell Integration                                                                                   │
-[ -f ~/.config/kitty/shell-integration/bash/kitty.bash ] && source ~/.config/kitty/shell-integration/bash/  │
-kitty.bash
+# [ -f ~/.config/kitty/shell-integration/bash/kitty.bash ] && source ~/.config/kitty/shell-integration/bash/kitty.bash
