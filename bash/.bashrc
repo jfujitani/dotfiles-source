@@ -144,3 +144,7 @@ fi
 
 # Kitty Shell Integration                                                                                   │
 # [ -f ~/.config/kitty/shell-integration/bash/kitty.bash ] && source ~/.config/kitty/shell-integration/bash/kitty.bash
+
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
+source <(carapace _carapace)
+
