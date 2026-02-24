@@ -47,5 +47,7 @@
     { "before": ["leader", "-"], "commands": [":split"] }
   ],
   "editor.minimap.enabled": false,
-  "debug.javascript.autoAttachFilter": "disabled"
+  "debug.javascript.autoAttachFilter": "disabled",
+  "windowsaistudio.externalOpenAIProviders": [],
 }
+
