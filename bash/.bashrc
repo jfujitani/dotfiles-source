@@ -148,6 +148,7 @@ fi
 
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
 source <(carapace _carapace)
-alias ls='eza -a --icons=always --group-directories-first'
-alias ll='eza -al --icons=always --group-directories-first'
-alias lt='eza -a --tree --level=1 --icons=always --group-directories-first'
+alias ls='eza -a --icons=always --group --group-directories-first'
+alias ll='eza -al --icons=always --group --group-directories-first'
+alias lt='eza -a --tree --level=1 --icons=always --group --group-directories-first'
+export OLLAMA_HOST="http://localhost:11434"
