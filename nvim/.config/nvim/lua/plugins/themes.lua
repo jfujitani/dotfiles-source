@@ -1,9 +1,8 @@
 return {
-  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-nvim",
       pickers = {
         enable_preview = true,
       },
