@@ -81,39 +81,6 @@ _open_files_for_editing() {
 ################################################################################
 eval "$(starship init bash)"
 
-eval "$(fzf --bash)"
-# Options to fzf command
-export FZF_COMPLETION_OPTS='--border --info=inline'
-
-# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
-# - The first argument to the function ($1) is the base path to start traversal
-# - See the source code (completion.{bash,zsh}) for the details.
-_fzf_compgen_path() {
-  fd --hidden --follow --exclude ".git" . "$1"
-}
-
-# Use fd to generate the list for directory completion
-_fzf_compgen_dir() {
-  fd --type d --hidden --follow --exclude ".git" . "$1"
-}
-
-# Advanced customization of fzf options via _fzf_comprun function
-# - The first argument to the function is the name of the command.
-# - You should make sure to pass the rest of the arguments to fzf.
-_fzf_comprun() {
-  local command=$1
-  shift
-
-  case "$command" in
-  cd) fzf --preview 'tree -C {} | head -200' "$@" ;;
-  export | unset) fzf --preview "eval 'echo \$'{}" "$@" ;;
-  ssh) fzf --preview 'dig {}' "$@" ;;
-  *) fzf --preview 'bat -n --color=always {}' "$@" ;;
-  esac
-}
-
-alias fcheckout='git branch | awk '\''{$1=$1; print}'\'' | fzf --height=80% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview '\''echo "Branch: {}"; echo "Latest Commit: $(git log --oneline -n 1 {})"'\'' | awk '\''{print $NF}'\'' | xargs git checkout'
-
 export PICO_SDK_PATH=/home/jfujitani/repos/pico/pico-sdk
 export EDITOR="nvim"
 alias vim='nvim'
@@ -143,12 +110,20 @@ if [ -f /usr/bin/zoxide ]; then
   eval "$(zoxide init bash)"
 fi
 
-# Kitty Shell Integration                                                                                   │
-# [ -f ~/.config/kitty/shell-integration/bash/kitty.bash ] && source ~/.config/kitty/shell-integration/bash/kitty.bash
-
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
 source <(carapace _carapace)
+
 alias ls='eza -a --icons=always --group --group-directories-first'
 alias ll='eza -al --icons=always --group --group-directories-first'
 alias lt='eza -a --tree --level=1 --icons=always --group --group-directories-first'
 export OLLAMA_HOST="http://localhost:11434"
+
+eval "$(fzf --bash)"
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_T_OPTS="--border --info=inline --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+export FZF_COMPLETION_OPTS="--border --info=inline --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--border --info=inline  --preview 'tree -C {} | head -200'"
+
+
+alias fcheckout='git branch | awk '\''{$1=$1; print}'\'' | fzf --height=80% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview '\''echo "Branch: {}"; echo "Latest Commit: $(git log --oneline -n 1 {})"'\'' | awk '\''{print $NF}'\'' | xargs git checkout'
