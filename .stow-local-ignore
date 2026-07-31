@@ -1,0 +1,5 @@
+\.herdr/
+.*\log
+.*\.sock
+state/
+.*\.json
