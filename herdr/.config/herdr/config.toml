@@ -9,6 +9,9 @@ prefix = "ctrl+a"
 navigate_workspace_down = ["down", "j"]
 navigate_workspace_up = ["up", "k"]
 
+next_workspace = ["prefix+tab"]
+previous_workspace = ["prefix+shift+tab"]
+
 next_agent = "prefix+a"
 previous_agent = "prefix+shift+a"
 
@@ -28,16 +31,16 @@ key = ["prefix+ctrl+g", "prefix+shift+l"]
 type = "popup"
 command = "lazygit"
 description = "run lazygit"
-width = "80%"
-height = "80%"
+width = "90%"
+height = "90%"
 
 [[keys.command]]
 key = "prefix+t"
 type = "popup"
 command = "exec \"${SHELL:-sh}\""
 description = "open scratch terminal"
-width = "80%"
-height = "80%"
+width = "90%"
+height = "90%"
 
 [ui]
 agent_panel_sort = "spaces"
