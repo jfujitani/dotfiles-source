@@ -1,0 +1,43 @@
+onboarding = false
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[keys]
+prefix = "ctrl+a"
+
+navigate_workspace_down = ["down", "j"]
+navigate_workspace_up = ["up", "k"]
+
+next_agent = "prefix+a"
+previous_agent = "prefix+shift+a"
+
+toggle_sidebar = ["prefix+b", "prefix+space"]
+focus_pane_left = ["prefix+h", "ctrl+h"]
+focus_pane_down = ["prefix+j", "ctrl+j"]
+focus_pane_up = ["prefix+k", "ctrl+k"]
+focus_pane_right = ["prefix+l", "ctrl+l"]
+
+[[keys.command]]
+key = "prefix+u"
+command = "herdr server reload-config"
+description = "Reload config"
+
+[[keys.command]]
+key = ["prefix+ctrl+g", "prefix+shift+l"]
+type = "popup"
+command = "lazygit"
+description = "run lazygit"
+width = "80%"
+height = "80%"
+
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "exec \"${SHELL:-sh}\""
+description = "open scratch terminal"
+width = "80%"
+height = "80%"
+
+[ui]
+agent_panel_sort = "spaces"

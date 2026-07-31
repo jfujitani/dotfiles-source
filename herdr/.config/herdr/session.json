@@ -1,0 +1,83 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "wG",
+      "custom_name": null,
+      "identity_cwd": "/home/jfujitani/dotfiles-source/herdr/.config/herdr",
+      "public_pane_numbers": {
+        "1": 1,
+        "16": 4
+      },
+      "next_public_pane_number": 5,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Vertical",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 1
+              },
+              "second": {
+                "Pane": 16
+              }
+            }
+          },
+          "panes": {
+            "1": {
+              "cwd": "/home/jfujitani/dotfiles-source/herdr/.config/herdr"
+            },
+            "16": {
+              "cwd": "/home/jfujitani/dotfiles-source/herdr/.config/herdr"
+            }
+          },
+          "zoomed": false,
+          "focused": 1,
+          "root_pane": 1
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wH",
+      "custom_name": null,
+      "identity_cwd": "/home/jfujitani/repos/learn_cpp",
+      "public_pane_numbers": {
+        "15": 2
+      },
+      "next_public_pane_number": 4,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 15
+          },
+          "panes": {
+            "15": {
+              "cwd": "/home/jfujitani/repos/learn_cpp"
+            }
+          },
+          "zoomed": false,
+          "focused": 15,
+          "root_pane": 15
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": 19,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}

@@ -1,0 +1,47 @@
+2026-07-31T04:48:17.246132Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=37406
+2026-07-31T04:48:17.246211Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T04:48:17.313329Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T04:48:41.719534Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-31T04:48:41.719669Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-31T04:48:43.812805Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=37406
+2026-07-31T04:48:48.898992Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=38324
+2026-07-31T04:48:48.899066Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T04:48:49.111435Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:23:18.092230Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=38324
+2026-07-31T05:23:21.215307Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=47970
+2026-07-31T05:23:21.215463Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:23:21.255280Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:23:58.900505Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=47970
+2026-07-31T05:24:23.773347Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=48458
+2026-07-31T05:24:23.773422Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:24:23.790429Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:24:26.613262Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=48458
+2026-07-31T05:24:33.729378Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=48591
+2026-07-31T05:24:33.729425Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:24:33.763150Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:27:40.558784Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=48591
+2026-07-31T05:27:43.064573Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=51731
+2026-07-31T05:27:43.064630Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:27:43.090629Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:40:27.007064Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=51731
+2026-07-31T05:40:30.087733Z  WARN herdr::config::keybinds: config diagnostic empty custom command: keys.command[1].command; disabling custom command
+2026-07-31T05:40:30.088099Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=56364
+2026-07-31T05:40:30.088121Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:40:30.291678Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:40:46.089420Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=56364
+2026-07-31T05:40:52.824285Z  WARN herdr::config::keybinds: config diagnostic empty custom command: keys.command[1].command; disabling custom command
+2026-07-31T05:40:52.824667Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=57030
+2026-07-31T05:40:52.824684Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:40:52.866244Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:47:45.141560Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=57030
+2026-07-31T05:47:52.210593Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=60104
+2026-07-31T05:47:52.210638Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:47:52.237647Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:48:29.993000Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=60104
+2026-07-31T05:48:34.709514Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=61326
+2026-07-31T05:48:34.709531Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:48:34.786682Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T05:48:59.633992Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=61326
+2026-07-31T05:49:25.149258Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=62489
+2026-07-31T05:49:25.149337Z  INFO herdr::client: connecting to server path=/home/jfujitani/.config/herdr/herdr-client.sock
+2026-07-31T05:49:25.294406Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
