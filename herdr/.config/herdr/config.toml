@@ -9,13 +9,14 @@ prefix = "ctrl+a"
 navigate_workspace_down = ["down", "j"]
 navigate_workspace_up = ["up", "k"]
 
+toggle_sidebar = ["prefix+b"]
+
 next_workspace = ["prefix+tab"]
 previous_workspace = ["prefix+shift+tab"]
 
 next_agent = "prefix+a"
 previous_agent = "prefix+shift+a"
 
-toggle_sidebar = ["prefix+b", "prefix+space"]
 focus_pane_left = ["prefix+h", "ctrl+h"]
 focus_pane_down = ["prefix+j", "ctrl+j"]
 focus_pane_up = ["prefix+k", "ctrl+k"]
