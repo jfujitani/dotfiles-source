@@ -106,6 +106,8 @@ if [ -f ~/.config/gemini/api_key ]; then
   source ~/.config/gemini/api_key
 fi
 
+eval "$(try init ~/repos/tries)"
+
 if [ -f /usr/bin/zoxide ]; then
   eval "$(zoxide init bash)"
 fi
@@ -124,6 +126,5 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--border --info=inline --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 export FZF_COMPLETION_OPTS="--border --info=inline --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--border --info=inline  --preview 'tree -C {} | head -200'"
-
 
 alias fcheckout='git branch | awk '\''{$1=$1; print}'\'' | fzf --height=80% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview '\''echo "Branch: {}"; echo "Latest Commit: $(git log --oneline -n 1 {})"'\'' | awk '\''{print $NF}'\'' | xargs git checkout'
