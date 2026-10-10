@@ -22,6 +22,8 @@ previous_agent = "prefix+shift+a"
 # focus_pane_up = ["prefix+k", "ctrl+k"]
 # focus_pane_right = ["prefix+l", "ctrl+l"]
 
+swap_pane_right = "prefix+shift+l"
+
 [[keys.command]]
 key = "ctrl+h"
 type = "plugin_action"
@@ -52,7 +54,7 @@ command = "herdr server reload-config"
 description = "Reload config"
 
 [[keys.command]]
-key = ["prefix+ctrl+g", "prefix+shift+l"]
+key = "prefix+ctrl+g"
 type = "popup"
 command = "lazygit"
 description = "run lazygit"
